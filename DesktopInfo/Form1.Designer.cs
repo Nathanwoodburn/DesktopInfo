@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             labelremote = new Label();
             labelContainer = new Label();
             updatetimer = new System.Windows.Forms.Timer(components);
@@ -116,6 +117,7 @@
             Controls.Add(labelremote);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             RightToLeftLayout = true;
             Text = "Form1";

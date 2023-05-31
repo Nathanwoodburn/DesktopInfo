@@ -223,7 +223,7 @@ namespace DesktopInfo
         {
             try
             {
-                var ramPercent = (int)(100 * (new Microsoft.VisualBasic.Devices.ComputerInfo().TotalPhysicalMemory - 
+                var ramPercent = (int)(100 * (new Microsoft.VisualBasic.Devices.ComputerInfo().TotalPhysicalMemory -
                     new Microsoft.VisualBasic.Devices.ComputerInfo().AvailablePhysicalMemory) /
                     new Microsoft.VisualBasic.Devices.ComputerInfo().TotalPhysicalMemory);
                 var cpuPercent = (int)cpuCounter.NextValue();
